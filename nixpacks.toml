@@ -2,7 +2,7 @@
 cmds = ["npm install"]
 
 [phases.build]
-cmds = ["npm run build --workspace=@dtc/backend"]
+cmds = ["cd apps/backend && npm run build"]
 
 [start]
-cmd = "npm run start --workspace=@dtc/backend"
+cmd = "cd apps/backend && npm run start"
