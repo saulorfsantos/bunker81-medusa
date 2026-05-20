@@ -1,0 +1,8 @@
+[phases.install]
+cmds = ["npm install"]
+
+[phases.build]
+cmds = ["npm run build --workspace=@dtc/backend"]
+
+[start]
+cmd = "npm run start --workspace=@dtc/backend"
