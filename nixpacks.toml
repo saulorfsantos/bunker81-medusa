@@ -1,8 +1,8 @@
+[phases.setup]
+nixPkgs = ["nodejs_20", "npm-11_x"]
+
 [phases.install]
 cmds = ["npm install"]
 
 [phases.build]
 cmds = ["cd apps/backend && npm run build"]
-
-[start]
-cmd = "cd apps/backend && npm run start"
